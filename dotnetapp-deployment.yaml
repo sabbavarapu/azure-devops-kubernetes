@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: dotnetapp
-        image: christianhxc/simpleapp:latest
+        image: vtest1container.azurecr.io/sabbavarapu/azure-devops-kubernetes:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
