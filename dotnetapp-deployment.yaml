@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: dotnetapp
-        image: vtest1container.azurecr.io/sabbavarapu/azure-devops-kubernetes:latest
+        image: vtest1container.azurecr.io/sabbavarapu/angular-app-kubernetes:#{Build.BuildId}#
         imagePullPolicy: Always
         ports:
         - containerPort: 80
