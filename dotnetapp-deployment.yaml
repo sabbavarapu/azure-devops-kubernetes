@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dotnetapp-deployment
-   labels:
+  labels:
     app: dotnetapp
 spec:
   replicas: 3
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: dotnetapp
-        image: vtest1container.azurecr.io/sabbavarapu/angular-app-kubernetes:#{Build.BuildId}#
+        image: vtest1container.azurecr.io/sabbavarapu/azure-devops-kubernetes-dotnet:#{Build.BuildId}#
         imagePullPolicy: Always
         ports:
         - containerPort: 80
